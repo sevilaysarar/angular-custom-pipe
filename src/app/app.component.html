@@ -1,0 +1,10 @@
+<h3>Country Pipe</h3>
+<input
+  type="text"
+  [(ngModel)]="countryCode"
+  placeholder="Enter Country Code..."
+/>
+<p>{{ countryList | country:countryCode }}</p>
+
+<h3>Phone Number Pipe</h3>
+<p>{{'5316824964' | phoneNumber:'90'}}</p>
